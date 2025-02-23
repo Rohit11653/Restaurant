@@ -1,62 +1,345 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .check-circle {
-            width: 24px;
-            height: 24px;
-            background-color: #e8f0fe;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #1a73e8;
-            margin-right: 12px;
-        }
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .benefit-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/19.2.11/css/intlTelInput.min.css" />
 
-        .custom-pink {
-            color: #ff69b4;
-        }
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 
-        .btn-outline-custom {
-            border: 1px solid #dee2e6;
-            color: #333;
-        }
-
-        .btn-custom-pink {
-            background-color: #ff69b4;
-            color: white;
-        }
-
-        .btn-custom-pink:hover {
-            background-color: #ff4fab;
-            color: white;
-        }
-
-        .benefit-list {
-            list-style: none;
-            padding-left: 36px;
-        }
-
-        .benefit-list li::before {
-            content: "•";
-            color: #6c757d;
-            margin-right: 8px;
-        }
-    </style>
+    <title>Home Page</title>
 </head>
+
 <body>
-  
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- Navigation Section Start -->
+    <section class="nav-sec">
+        <div class="container">
+            <div class="main-div">
+                <div class="logo-img">
+                    <img src="./images/logo.png">
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+                <div class="button-item">
+                    <button class="btn">Book a Demo</button>
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Navigation Section End -->
+    <!-- hero section start here -->
+    <section class="here-sec">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your cafe adventure start here</h1>
+                <p>meet new friends, enjoy great vibes, food, <br> games and unforgettable moments!</p>
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Your nearby Cafe’s">
+                    </div>
+                    <button class="location-btn">
+                        <i class="fas fa-crosshairs"></i> Use your current location
+                    </button>
+                </div>
+                <div class="hero-img">
+                    <img src="./images/Mask group.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section end here -->
+    <!-- video section start here -->
+    <section>
+        <div class="container">
+            <div class="video-container">
+                <video class="video-player" poster="./images/Mask Group (1).png">
+                    <source src="./images/31806-388997519_small.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <button class="play-button">▶</button>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="time-display">0:00 / 0:00</div>
+                </div>
+            </div>
+        </div>
+       </section>
+    <!-- video section end here -->
+    <!-- How it works! sction start here -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="hedging">
+                <h1>How it <span>works</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-4">
+                    <div class="cart">
+                        <div class="cart-img">
+                            <img src="./images/Mask group (2).png" alt="">
+                        </div>
+                        <div class="cart-content">
+                            <h1>Discover</h1>
+                            <p>Search for nearby JTT-powered cafes on our website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="cart">
+                        <div class="cart-img">
+                            <img src="./images/Mask group (2).png" alt="">
+                        </div>
+                        <div class="cart-content">
+                            <h1>Discover</h1>
+                            <p>Search for nearby JTT-powered cafes on our website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="cart">
+                        <div class="cart-img">
+                            <img src="./images/Mask group (2).png" alt="">
+                        </div>
+                        <div class="cart-content">
+                            <h1>Explore</h1>
+                            <p>Choose to stay anonymous or sign up, See socially available people present in the cafe, </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="cart">
+                        <div class="cart-img">
+                            <img src="./images/Mask group (2).png" alt="">
+                        </div>
+                        <div class="cart-content">
+                            <h1>Interact</h1>
+                            <p>If interest is mutual: Chat within the app, play games and Invite to join your table</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How it works! sction end here -->
+     <section>
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3">Cafe <span class="custom-pink">Benefits</span></h1>
+                    <p class="lead">Keep your customers coming back for more</p>
+                </div>
+            </div>
     
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="row mb-5">
+                <!-- Vibrant Atmosphere -->
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="check-circle">
+                            <i class="bi bi-check"></i>
+                        </div>
+                        <h3 class="benefit-title">Vibrant Atmosphere</h3>
+                    </div>
+                    <ul class="benefit-list">
+                        <li>Keep your cafe more happening and cheerful</li>
+                        <li>Create a lively, social environment</li>
+                    </ul>
+                </div>
+    
+                <!-- Increase Visibility -->
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="check-circle">
+                            <i class="bi bi-check"></i>
+                        </div>
+                        <h3 class="benefit-title">Increase Visibility</h3>
+                    </div>
+                    <ul class="benefit-list">
+                        <li>Listed on our website</li>
+                        <li>Featured in our promotional activities</li>
+                    </ul>
+                </div>
+    
+                <!-- Boost in Sales -->
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="check-circle">
+                            <i class="bi bi-check"></i>
+                        </div>
+                        <h3 class="benefit-title">Boost in Sales</h3>
+                    </div>
+                    <ul class="benefit-list">
+                        <li>Happy and newly connected customers tend to order more</li>
+                        <li>Customer retention</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-outline-custom rounded-pill px-4">Get a call back</button>
+                        <button class="btn btn-custom-pink rounded-pill px-4">Book a Free Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+     </section>
+     <section>
+        <div class="signup-container">
+            <h1>Signup as cafe</h1>
+            <form>
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="Your First Name">
+                </div>
+    
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input id="phone" type="tel">
+                </div>
+    
+                <div class="form-group">
+                    <label>Email (optional)</label>
+                    <input type="email" placeholder="Your Email Address">
+                </div>
+    
+                <div class="form-group">
+                    <label>City</label>
+                    <select>
+                        <option value="" disabled selected>Your City Name</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label>Restaurant name</label>
+                    <input type="text" placeholder="Write here...">
+                </div>
+    
+                <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+        </div>
+    
+     </section>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+ <!-- Include the JS file for intl-tel-input -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+ <script>
+     // Initialize the intl-tel-input plugin
+     const phoneInputField = document.querySelector("#phone");
+     const phoneInput = window.intlTelInput(phoneInputField, {
+         initialCountry: "in", // Set India as default country
+         preferredCountries: ["in", "us", "gb"], // Preferred countries
+         utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+     });
+ </script>
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let menuLinks = document.querySelectorAll(".menu-item ul li a");
+
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent page refresh
+
+                    // Sabhi menu items se "active" class hatao
+                    menuLinks.forEach(item => item.classList.remove("active"));
+
+                    // Jo click kiya usme "active" class add karo
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".button-item i");
+    const menu = document.querySelector(".menu-item");
+
+    menuIcon.addEventListener("click", function () {
+        menu.classList.toggle("show"); // Class toggle se menu show/hide hoga
+    });
+});
+
+    </script>
+     <script>
+        // Change flag when country is selected
+        const countrySelect = document.querySelector('.country-select select');
+        const countryFlag = document.querySelector('.country-flag');
+        
+        countrySelect.addEventListener('change', (e) => {
+            const selectedOption = e.target.options[e.target.selectedIndex];
+            countryFlag.src = selectedOption.getAttribute('data-flag');
+        });
+    </script>
+
+
+<script>
+    const videoPlayer = document.querySelector('.video-player');
+    const playButton = document.querySelector('.play-button');
+    const progressBar = document.querySelector('.progress-bar');
+    const progress = document.querySelector('.progress');
+    const timeDisplay = document.querySelector('.time-display');
+
+    // Format time in minutes:seconds
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        seconds = Math.floor(seconds % 60);
+        return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    // Play/Pause functionality
+    playButton.addEventListener('click', () => {
+        if (videoPlayer.paused) {
+            videoPlayer.play();
+            playButton.textContent = '⏸';
+        } else {
+            videoPlayer.pause();
+            playButton.textContent = '▶';
+        }
+    });
+
+    // Update progress bar and time display
+    videoPlayer.addEventListener('timeupdate', () => {
+        const progressPercent = (videoPlayer.currentTime / videoPlayer.duration) * 100;
+        progress.style.width = `${progressPercent}%`;
+
+        // Update time display
+        const currentTime = formatTime(videoPlayer.currentTime);
+        const duration = formatTime(videoPlayer.duration);
+        timeDisplay.textContent = `${currentTime} / ${duration}`;
+    });
+
+    // Update time display when metadata is loaded
+    videoPlayer.addEventListener('loadedmetadata', () => {
+        const duration = formatTime(videoPlayer.duration);
+        timeDisplay.textContent = `0:00 / ${duration}`;
+    });
+
+    // Click on progress bar to seek
+    progressBar.addEventListener('click', (e) => {
+        const progressTime = (e.offsetX / progressBar.offsetWidth) * videoPlayer.duration;
+        videoPlayer.currentTime = progressTime;
+    });
+</script>
 </body>
+
 </html>
